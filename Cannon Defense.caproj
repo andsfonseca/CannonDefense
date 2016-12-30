@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Cannon Defense</name>
+    <description></description>
+    <version>0.1</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3ie7o4c2dyb8f</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1024</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Oracio" sid="919265359060392">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="A vida do Oracio" name="life" sid="133337577586063" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Fade" sid="253216054999549">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="417118602604016" speed="5">
+                    <frame duration="1" hotspotX="0.502513" hotspotY="0.5" original-source="C:\Users\IFMA-SJR\Desktop\Canhao\canhao.png">
+                        <collision-poly>
+                            <point x="0.899498" y="0.185185" />
+                            <point x="1" y="0.5" />
+                            <point x="0.914573" y="0.842593" />
+                            <point x="0.502513" y="1" />
+                            <point x="0.165829" y="0.694444" />
+                            <point x="0" y="0.5" />
+                            <point x="0.170854" y="0.314815" />
+                            <point x="0.502513" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="965916224240622">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Cenario" sid="339042595192195">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="355280060199634" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\IFMA-SJR\Desktop\Canhao\terreno.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BolaDeCanhao" sid="400967999776139">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="473764204000595">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="336118366601497" speed="5">
+                    <frame duration="1" hotspotX="0.491228" hotspotY="0.4" original-source="C:\Users\IFMA-SJR\Desktop\Platformer Art Complete Pack\Base pack\Items\bomb.png">
+                        <collision-poly>
+                            <point x="0.0877193" y="0.0166667" />
+                            <point x="0.491228" y="0.0666667" />
+                            <point x="0.77193" y="0.133333" />
+                            <point x="0.964912" y="0.4" />
+                            <point x="0.894737" y="0.783333" />
+                            <point x="0.491228" y="0.983333" />
+                            <point x="0.105263" y="0.766667" />
+                            <point x="0.0526316" y="0.4" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Barquinho" sid="538072289246358">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="402477313222621">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Turret" sid="688471525213719">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="697581809591827">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="309557755344468" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\IFMA-SJR\Desktop\Canhao\barco.png">
+                        <collision-poly>
+                            <point x="0.789216" y="0.286667" />
+                            <point x="0.990196" y="0.5" />
+                            <point x="0.794118" y="0.72" />
+                            <point x="0.5" y="0.806667" />
+                            <point x="0.186275" y="0.746667" />
+                            <point x="0.00980395" y="0.5" />
+                            <point x="0.186275" y="0.253333" />
+                            <point x="0.5" y="0.2" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txtLife" sid="714778599381794">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Spawner" sid="212387018719986">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="406515184601074" speed="5">
+                    <frame duration="1" hotspotX="0.583333" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txtScore" sid="857040026899010">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Game.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Game Events.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="1" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
